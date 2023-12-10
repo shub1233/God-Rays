@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGL: God Rays</title>
+</head>
+
+<body onload="main()" style="height: 98vh; display: flex; align-items: center; justify-content:center;">
+    <canvas id="sss" width="800" height="600">
+        This browser does not support html5 canvas element.
+    </canvas>
+
+    <div style="position: fixed; top: 0; right: 0; color: gray">
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>exposure :</label>
+            <input type="range" id="exposure" min="0.0" max="1.0" value="0.3397" step="0.0001">
+            <div id="exposure_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>decay :</label>
+            <input type="range" id="decay" min="0.0" max="1.0" value="0.82" step="0.01">
+            <div id="decay_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+        
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>density :</label>
+            <input type="range" id="density" min="0.0" max="1.0" value="0.16" step="0.01">
+            <div id="density_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>weight :</label>
+            <input type="range" id="weight" min="0.0" max="50.0" value="22.22" step="0.01">
+            <div id="weight_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>lPosX :</label>
+            <input type="range" id="lPosX" min="-100" max="100" value="0.0" step="0.001">
+            <div id="lPosX_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 4px; justify-content: flex-end;">
+            <label>lPosY :</label>
+            <input type="range" id="lPosY" min="-100" max="100" value="0.0" step="0.001">
+            <div id="lPosY_value" style="width: 50px; margin-left: 5px"></div>
+        </div>
+    </div>
+
+    <script src="gl-matrix-min.js">
+    </script>
+    <script src="canvas.js">
+    </script>
+</body>
+
+</html>
